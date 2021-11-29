@@ -1,0 +1,31 @@
+import React from 'react'
+import Addmovie from './Addmovie'
+
+const Sidenavbar = ({ addMovies }) => {
+    return (
+        <div>
+            <div className="first-list">
+                <ul className="ul1">
+                    <h4>Movie type <span style={{fontSize:"20px"}}>🎥</span></h4>
+                    <li>Action</li>
+                    <li>Horor</li>
+                    <li>Comedy</li>
+                    <li>Drama</li>
+                    <li>more...</li>
+                </ul>
+                <ul className="ul2">
+                    <h4>Languages <span style={{fontSize:"17px"}}>&#160;🌐</span></h4>
+                    <li>English</li>
+                    <li>French</li>
+                    <li>Arabic</li>
+                    <li>more...</li>
+                </ul>
+                <div className="add">
+                <Addmovie  addMovies={addMovies}/>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Sidenavbar
